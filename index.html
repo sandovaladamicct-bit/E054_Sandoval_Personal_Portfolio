@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10131f">
+  <meta name="description" content="Adam John Balmores Sandoval — automation enthusiast, software entrepreneur, and Filipino innovator.">
+  <title>Adam John Sandoval | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- Fixed navigation. The links point to section IDs below. -->
+  <header class="site-header">
+    <nav class="container nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Adam John Sandoval, home">Project in WS01<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Personal portfolio · 2026</span>
+          <h1><span class="name-line">Adam John</span><span class="gradient-text">Balmores Sandoval</span></h1>
+          <p class="hero-subtitle">Next Generation of Automation Specialist, Software Entrepreneur, and Filipino Innovator</p>
+          <p class="hero-copy">Welcome to my digital space where I share my journey, code, and creations. Let's make every step better for our future.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+            <a class="btn secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        
+        <!-- Rectangular Photo Gallery Field -->
+        <div class="hero-art" aria-label="Photo gallery">
+          <span class="floating-label label-one">Build · Learn · Improve</span>
+          
+          <div class="orbit">
+            <button class="carousel-btn carousel-prev" id="prevPhoto" aria-label="Previous photo">❮</button>
+            <div class="carousel-track" id="carouselTrack">
+              <!-- Add your photo filenames or image URLs below -->
+              <div class="carousel-slide">
+                <img src="./IMG_6006_1.jpg" alt="Adam John Sandoval 1" class="orbit-photo">
+              </div>
+              <div class="carousel-slide">
+                <img src="./IMG_20261108_232336_733.jpg" alt="Adam John Sandoval 2" class="orbit-photo">
+              </div>
+              <div class="carousel-slide">
+                <img src="./IMG_20261108_232318_123.jpg" alt="Adam John Sandoval 3" class="orbit-photo">
+              </div>
+            </div>
+            <button class="carousel-btn carousel-next" id="nextPhoto" aria-label="Next photo">❯</button>
+          </div>
+
+          <span class="floating-label label-two">Curiosity into creation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <span class="eyebrow">A little about me</span>
+          <h2>Driven by questions.<br><span class="gradient-text">Grounded in purpose.</span></h2>
+          <div class="about-note">
+            <p>“I live on the edge of decency and chaos, but still filled with questions that led me to who I am today.”</p>
+          </div>
+        </div>
+        <div class="about-copy">
+          <p>My story is shaped by curiosity, experience, and the questions that keep me moving forward. I believe that meaningful progress comes from staying open to learning while being intentional about the person I want to become.</p>
+          <p><strong>My current focus</strong> is getting my degree, being an effective member of the community, and preparing for the future I hope to build as a husband and father.</p>
+          <div class="personal-detail">
+            <strong>A personal note</strong>
+            <p style="margin:8px 0 0">I am actually autistic, and it has enabled me to be excellent in music. Music is an important part of how I express myself and connect with others.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <span class="eyebrow">What I work with</span>
+        <h2>Skills & <span class="gradient-text">toolkit</span></h2>
+        <p class="section-intro">A growing foundation in web development, databases, and practical tools for building and improving digital experiences.</p>
+        <div class="skills-grid">
+          <article class="card skill-card">
+            <div class="skill-icon" aria-hidden="true">⌘</div>
+            <h3>Core Technologies</h3>
+            <div class="tag-list">
+              <span class="tag">HTML5 & CSS3</span>
+              <span class="tag">W3C Validation Standards</span>
+              <span class="tag">JavaScript (ES6+)</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Relational Databases (SQL)</span>
+            </div>
+          </article>
+          <article class="card skill-card">
+            <div class="skill-icon" aria-hidden="true">⚙</div>
+            <h3>Tools & Workflow</h3>
+            <div class="tag-list">
+              <span class="tag">Visual Studio Code</span>
+              <span class="tag">Git & Version Control</span>
+              <span class="tag">Responsive Design</span>
+              <span class="tag">Debugging</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <span class="eyebrow">Things I've built</span>
+        <h2>Featured <span class="gradient-text">projects</span></h2>
+        <p class="section-intro">Small, practical browser-based tools. Open a demo and try it — everything runs locally in this page.</p>
+        <div class="projects-grid">
+          <article class="card project-card">
+            <div class="project-symbol" aria-hidden="true">✓</div>
+            <span class="project-number">PROJECT 01</span>
+            <h3>Interactive Task Tracker</h3>
+            <p>Add tasks, mark them complete, and remove them as you work through your list.</p>
+            <button class="btn small open-demo" data-demo="tasks">Try the demo <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="card project-card">
+            <div class="project-symbol" aria-hidden="true">％</div>
+            <span class="project-number">PROJECT 02</span>
+            <h3>Tip & Bill Split Calculator</h3>
+            <p>Calculate the tip, total bill, and fair share for each person at the table.</p>
+            <button class="btn small open-demo" data-demo="split">Try the demo <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="card project-card">
+            <div class="project-symbol" aria-hidden="true">₱</div>
+            <span class="project-number">PROJECT 03</span>
+            <h3>Simple Expense Log</h3>
+            <p>Record purchases and see your running expense total update instantly.</p>
+            <button class="btn small open-demo" data-demo="expenses">Try the demo <span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <span class="eyebrow">Learning & milestones</span>
+        <h2>Education & <span class="gradient-text">achievements</span></h2>
+        <div class="card education-card">
+          <div>
+            <div class="skill-icon" aria-hidden="true">✦</div>
+            <h3>Our Lady of Fatima University</h3>
+            <p class="education-meta">2020–2022</p>
+            <p style="color:var(--muted); margin-bottom:0">Science Technology Engineering Mathematics (Applied Science)</p>
+          </div>
+          <div>
+            <h3>Selected achievements</h3>
+            <ul class="achievement-list">
+              <li>Published 2 research papers involving the manipulation of LTE networks.</li>
+              <li>Graduated with High Honors — GPA of 94.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <span class="eyebrow">Start a conversation</span>
+        <h2>Let's build something <span class="gradient-text">meaningful.</span></h2>
+        <div class="card contact-card">
+          <div>
+            <h3>Have an idea, opportunity, or just want to connect?</h3>
+            <p>Feel free to connect if you're interested.</p>
+            <a class="email-link" href="mailto:sandovaladam.icct@gmail.com">sandovaladam.icct@gmail.com</a>
+            <div class="social-links" aria-label="Social media links">
+              <!-- Replace the # placeholders with your real profile URLs. -->
+              <a class="social-link" href="https://www.linkedin.com/in/adam-john-sandoval-239325246/" aria-label="LinkedIn profile placeholder" target="_blank">in <span>LinkedIn</span></a>
+              <a class="social-link" href="https://github.com/sandovaladamicct-bit" aria-label="GitHub profile placeholder" target="_blank">⌘ <span>GitHub</span></a>
+              <a class="social-link" href="https://www.facebook.com/j0hnd3j3sus1578/" aria-label="Facebook profile placeholder" target="_blank">f <span>Facebook</span></a>
+            </div>
+            <p class="demo-help" style="margin:12px 0 0">Social links are placeholders. Add your profile URLs before publishing.</p>
+          </div>
+          <a class="btn" href="mailto:sandovaladam.icct@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Adam John Sandoval. All rights reserved.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Shared interactive project demo dialog -->
+  <div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <h3 id="modalTitle">Project demo</h3>
+        <button class="close-modal" id="closeModal" aria-label="Close demo">✕</button>
+      </div>
+      <div id="demoContent"></div>
+    </div>
+  </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
